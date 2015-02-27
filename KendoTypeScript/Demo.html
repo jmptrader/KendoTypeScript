@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title>Play with Kendo. MVC and Web API</title>
+    <link href="Kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="Kendo/styles/kendo.common.min.css" rel="stylesheet" />
+    <script src="Kendo/js/jquery.min.js"></script>
+    <script src="Kendo/js/kendo.web.min.js"></script>
+    <script src="Scripts/KendoWeb.js"></script>
+</head>
+<body>
+    <div id="example" class="k-content" >
+        <div class="k-block" style="text-align: center; height: 200px; width:400px; margin:0 auto">
+            <div class="k-header k-shadow">
+                <b>ALL MONTHS DEMO</b>
+            </div>
+
+            <input id="months" style="width: 250px"
+                data-role="dropdownlist"
+                data-value-primitive="true"
+                data-bind="value: SelectedValue, source: dropdownItems" />
+
+            <p></p>
+            <div style="text-align: center">
+                The selected Month, is the 
+            <span data-bind="text: SelectedValue"></span>
+                month in the calendar
+            </div>
+        </div>
+    </div>
+</body>
+</html>
